@@ -60,7 +60,7 @@ npm run preview
 
 ---
 
-### 🐳 Docker Setup (No Node.js Required)
+### 🐳 Docker Setup
 
 #### 1. Clone the project
 
