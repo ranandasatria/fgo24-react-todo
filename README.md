@@ -1,50 +1,134 @@
-# SIMPLE TODO LIST
+# Simple Todo List
 
-This project is a practical demonstration of building a task management application using React. You can add new tasks to your list and delete them when they're done. A key feature of this app is its use of React Context, which provides a clean and effective way to manage and share the application's state without prop drilling.
+A clean and minimal task management application built with **React**, **Vite**, and **React Context API**. Easily add and delete tasks while experiencing efficient state management without prop drilling.
 
-## Preview
-![Preview](src/assets/empty.png)
-![Preview](src/assets/filled.png)
+---
 
+## 🔍 Preview
 
+| Empty State | With Tasks |
+|-------------|------------|
+| ![Empty](src/assets/empty.png) | ![Filled](src/assets/filled.png) |
 
+---
 
-## Getting Started
-1. Clone this project:
+## 🚀 Getting Started
+
+### 🔧 Manual Installation (Recommended for Beginners)
+
+#### 1. Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v16 or above)
+- [Git](https://git-scm.com/)
+- A code editor or terminal (e.g., VS Code)
+
+#### 2. Clone the repository
+
+```bash
+git clone https://github.com/ranandasatria/fgo24-react-todo.git
+cd fgo24-react-todo
 ```
-git clone https://github.com/ranandasatria/fgo24-react-todo
-```
 
-2. Install the depedencies:
-```
+#### 3. Install dependencies
+
+```bash
 npm install
 ```
 
-3. Run the project:
-```
+> 💡 Tip: Use `npm ci` instead of `npm install` for a cleaner, faster install based on `package-lock.json`.
+
+#### 4. Start the development server
+
+```bash
 npm run dev
 ```
 
-4. The project will be runnning at:
-``` 
+Visit the app in your browser at:
+
+```
 http://localhost:8080
 ```
 
-## Depedencies
+#### 5. (Optional) Build and Preview Production Version
 
-This project uses Node.js. Make sure you have Node.js installed on your machine.
+```bash
+npm run build
+npm run preview
+```
 
-- vite: to simulate an HTTP server in a local environment.
+---
 
-## How to contribute
+### 🐳 Docker Setup (No Node.js Required)
 
-Please open a Pull Request (PR) to contribute to this project.
-Your PR will be reviewed and merged if necessary.
+#### 1. Clone the project
 
-## License
+```bash
+git clone https://github.com/ranandasatria/fgo24-react-todo
+cd fgo24-react-todo
+```
 
-This project following MIT License.
+#### 2. Build the Docker image
 
-## Copyright
+```bash
+docker build . -t react-todo
+```
+
+#### 3. Run the container
+
+```bash
+docker run -d -p 8080:80 react-todo
+```
+
+#### 4. Open the app
+
+Visit:
+
+```
+http://localhost:8080
+```
+
+> 🛑 To stop the container:
+> ```bash
+> docker ps
+> docker stop <container_id>
+> ```
+
+---
+
+## 📦 Dependencies
+
+This project uses:
+
+- [React](https://reactjs.org/) — For building the user interface
+- [Vite](https://vitejs.dev/) — For fast development/build tooling
+- [React Context API](https://reactjs.org/docs/context.html) — For state management
+- [Node.js](https://nodejs.org/) — JavaScript runtime
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome and appreciated!
+
+1. Fork the repository  
+2. Create a new branch (`git checkout -b feature-name`)  
+3. Make your changes  
+4. Commit and push your code  
+5. Open a Pull Request (PR)
+
+Your PR will be reviewed and merged if accepted.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## ©️ Copyright
+
 &copy; 2025 Kodacademy
-
